@@ -69,16 +69,6 @@ Representative result:
 - Bell-state fidelity $\approx 0.998$.
 - Concurrence $\approx 0.996$.
 
-## What should go on GitHub
-
-The clean GitHub version should emphasize:
-
-- `src/` code modules as the main implementation;
-- `scripts/` as the runnable entry points;
-- selected result files, not every raw restart;
-- selected figures, not every exploratory plot;
-- original notebooks only as legacy/reference material.
-
 ## Future work
 
 The most important future direction is experimental implementation using circuit QED. The theoretical optimized controls would need to be converted into experimentally feasible microwave/control waveforms. The next stage should include hardware constraints such as finite bandwidth, maximum drive amplitude, calibration error, dissipation-rate tunability, and noise robustness.
