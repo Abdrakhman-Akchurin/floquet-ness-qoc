@@ -49,7 +49,7 @@ Each optimization step does the following:
 2. Evaluate the periodic control fields on a time grid.
 3. Build the time-dependent Liouvillian slices.
 4. Compose the one-period Floquet map $\Phi$.
-5. Solve the fixed-point equation $\rho_* = \Phi\rho_*$ with the trace constraint $\mathrm{Tr}(\rho_*)=1$.
+5. Solve the fixed-point equation `rho_star = Phi rho_star` with trace constraint `Tr(rho_star) = 1`.
 6. Evaluate the objective, such as $\langle\sigma_z\rangle$, $\langle\sigma_x\rangle$, or Bell-state fidelity.
 7. Use `scipy.optimize.minimize` with `L-BFGS-B` to update the Fourier coefficients and period.
 
