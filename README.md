@@ -133,18 +133,6 @@ python scripts/run_bell_thermal_machine.py
 
 The scripts save compact `.npz` result files into `results/runs/`.
 
-## Notes on the cleanup
-
-The original files were notebook-heavy and mixed several tasks in one place: model definitions, optimization, plotting, presentation figures, and extra exploratory diagrams. This cleaned version separates those responsibilities.
-
-Important cleanup decisions:
-
-- The old folder name `bell_floquent_final` was renamed conceptually to `bell_thermal_machine` in the source code.
-- The Fourier coefficient layout is made consistent: `[a1, b1, a2, b2, ...]`.
-- Optimization scripts are short and call reusable functions from `src/`.
-- Presentation plotting is no longer mixed with optimization code.
-- Original notebooks are preserved in `legacy_notebooks/` but are not the main entry point.
-
 ## Future work
 
 A natural next step is experimental implementation in a circuit-QED platform. Circuit QED is a good candidate because superconducting qubits allow tunable drives, engineered dissipation, and reservoir-engineering protocols. In that setting, the optimized Fourier controls would need to be translated into experimentally feasible microwave/control pulses with bandwidth, amplitude, calibration, and noise constraints.
